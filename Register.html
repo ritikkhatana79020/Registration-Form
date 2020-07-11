@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <form class="signup-form" action="connect.php" method="post">
+
+      <div class="form-header">
+        <h1>Registration Form</h1>
+      </div>
+
+      <div class="form-body">
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First Name*</label>
+            <input type="text" id="firstname" class="form-input" placeholder="Enter your first name" required="required" name="fname" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last Name*</label>
+            <input type="text" id="lastname" class="form-input" placeholder="Enter your last name" name="lname" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" id="email" class="form-input" placeholder="Enter your email" required="required" name="email">
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" id="password" class="form-input" placeholder="Enter your password" required="required" name="password">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" class="form-input" id="confirm-password" placeholder="Enter your password again" required="required" name="confirm-password">
+          </div>
+        </div>
+
+        
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male" name="m"> Male</label>
+              <label for="female"><input type="radio" name="gender" value="female" id="female" name="f"> Female</label>
+            </div>
+          </div>
+          <div class="form-group right">
+            <label class="label-title">Select</label>
+            <div >
+              <label><input type="checkbox" >Internal</label>
+              <label><input type="checkbox" >Hospital</label>
+              </div>
+          </div>
+        </div>
+      <div class="form-footer">
+        
+        <button type="submit" class="btn">Submit</button>
+      </div>  
+    </form>
+  </body>
+</html>
